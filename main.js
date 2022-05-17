@@ -101,5 +101,3 @@ var cursor = {
   }
 }
 cursor.init();
-
-
