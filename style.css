@@ -187,7 +187,7 @@ svg {
 .about-me {
   margin-top: -30px;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   color: #57c5c5;
   background-image: url(layered-waves-haikei.png);
   padding-top: 40px;
@@ -200,6 +200,7 @@ svg {
 }
 
 .about-me h2 {
+  font-size: 50px;
   justify-content: center;
   text-align: center;
   padding-bottom: 40px;
@@ -213,7 +214,7 @@ svg {
 
 .about-me p {
   text-align: left;
-  font-size: 30px;
+  font-size: 25px;
   padding-left: 40px;
 }
 
@@ -269,6 +270,7 @@ svg {
   border: 4px solid #2DA1E7;
   top: 15px;
   border-radius: 50%;
+  z-index: 1;
 }
 
 /* Place the container to the left */
@@ -299,6 +301,7 @@ svg {
   top: 22px;
   width: 0;
   left: 30px;
+  z-index: 1;
 }
 
 /* Fix the circle for containers on the right side */
@@ -527,6 +530,7 @@ svg {
   right: 20px;
   bottom: 0;
   border-radius: 15px;
+  z-index: -1;
 }
 
 .screen-header {
@@ -675,7 +679,6 @@ footer{
   display: flex;
   width: 100%;
 }
-
 
 
 .fa-cog {
@@ -830,4 +833,34 @@ footer h1{
     width: 210px;
   }
   
+}
+
+html,
+html *,
+body,
+body * {
+  cursor: none;
+}
+.cursor-dot,
+.cursor-dot-outline {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.cursor-dot {
+  z-index: 10000;
+  width: 8px;
+  height: 8px;
+  background-color: #3dcfd3;
+}
+.cursor-dot-outline {
+  z-index: 10000;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(61, 207, 211, 0.5);
 }
