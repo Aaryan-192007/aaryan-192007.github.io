@@ -653,7 +653,7 @@ svg {
 
 
 
-footer{
+footer {
   background-color: black;
   background-size: cover;
   background-position: center center;
@@ -672,11 +672,11 @@ footer{
   color: white;
 }
 
-.umm svg{
-  margin-bottom: -285px ;
+.umm svg {
+  margin-bottom: -285px;
 }
 
-footer h1{
+footer h1 {
   display: block;
   font-size: 50px;
   text-align: center;
@@ -694,6 +694,7 @@ footer h1{
   .cards-wrapper {
     grid-template-columns: 1fr 1fr;
   }
+
   header {
     position: absolute;
     top: 0;
@@ -703,14 +704,15 @@ footer h1{
     display: flex;
     align-items: center
   }
+
   .topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 2px 1.25px;
-  text-decoration: none;
-  font-size: 17px;
-}
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 2px 1.25px;
+    text-decoration: none;
+    font-size: 17px;
+  }
 }
 
 
@@ -735,7 +737,7 @@ footer h1{
     margin: 0;
   }
 
-  
+
 
   .skill-tb {
     margin-top: 30px;
@@ -828,8 +830,7 @@ footer h1{
   }
 }
 
-@media screen and (max-width: 1000px)
- {
+@media screen and (max-width: 1000px) {
 
   /* Place the timelime to the left */
   .timeline::after {
@@ -842,6 +843,7 @@ footer h1{
     padding-left: 70px;
     padding-right: 25px;
   }
+
   /* Make sure all circles are at the same spot */
   .left::after,
   .right::after {
@@ -852,6 +854,7 @@ footer h1{
   .right {
     left: 0%;
   }
+
   .cards-wrapper {
     display: grid;
     justify-content: center;
@@ -862,15 +865,15 @@ footer h1{
     width: max-content;
   }
 
-  
- 
-  .skills{
+
+
+  .skills {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+
   }
 
-  .skill-tb{
+  .skill-tb {
     width: 210px;
   }
 }
@@ -881,6 +884,7 @@ body,
 body * {
   cursor: none;
 }
+
 .cursor-dot,
 .cursor-dot-outline {
   pointer-events: none;
@@ -892,12 +896,14 @@ body * {
   transform: translate(-50%, -50%);
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
+
 .cursor-dot {
   z-index: 10000;
   width: 8px;
   height: 8px;
   background-color: #3dcfd3;
 }
+
 .cursor-dot-outline {
   z-index: 10000;
   width: 40px;
